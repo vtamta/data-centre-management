@@ -44,7 +44,7 @@ This project implements and compares multiple metaheuristic optimization algorit
 
 Python 3.x with NumPy and Matplotlib:
 ```bash
-pip install numpy matplotlib jupyter
+pip install numpy matplotlib
 ```
 
 ### Running the Project
@@ -68,6 +68,7 @@ pip install numpy matplotlib jupyter
 data-centre-management/
 ├── README.md                           # This file
 ├── data_centre_management.ipynb        # Main notebook with all code and analysis
+├── bestGA_solution.npy                 # Best solution achieved (profit: 42,098)
 └── data/
     ├── demand.npy                      # Dynamic demand data for each time-step
     └── data.txt                        # Economic parameters (costs, prices, profits)
@@ -82,7 +83,18 @@ The notebook includes:
 - ✅ Statistical analysis of results
 - ✅ Discussion of algorithmic trade-offs
 
-**Key Findings**: Full analysis and visualizations available in the notebook.
+### Best Solution Achieved
+
+**Genetic Algorithm**: Achieved a profit of **42,098** - the best solution in the class!
+
+*Solution characteristics:*
+- Maximum value in solution: 4
+- Only 32 non-zero commands out of 1,200 possible commands
+- Demonstrates the algorithm's ability to find sparse, efficient solutions
+
+*The optimal solution is saved as `bestGA_solution.npy` for reproducibility.*
+
+**Full analysis and visualizations available in the notebook.**
 
 ## 💡 Key Learnings
 
@@ -113,14 +125,7 @@ Each integer represents the quantity of that operation at that time-step.
 
 This is an academic project completed for coursework. Feel free to fork and experiment with your own ideas!
 
-## 📄 License
-
-© 2024 Vaibhav Tamta. For educational purposes.
-
-## ✉️ Contact
-
-**Vaibhav Tamta**
-- GitHub: [@yourusername](https://github.com/yourusername)
+*This project was completed as a collaborative effort for university coursework.*
 
 ---
 
